@@ -16,8 +16,8 @@ export default function ThemeProvider({ children }) {
     }
     themeLink.href =
       theme === "dark"
-        ? "/node_modules/primereact/resources/themes/lara-dark-indigo/theme.css"
-        : "/node_modules/primereact/resources/themes/lara-light-indigo/theme.css";
+        ? "/themes/lara-dark-indigo/theme.css"
+        : "/themes/lara-light-indigo/theme.css";
     localStorage.setItem("theme", theme);
   }, [theme]);
 
